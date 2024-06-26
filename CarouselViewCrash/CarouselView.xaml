@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CarouselViewCrash"
+             x:Class="CarouselViewCrash.CarouselView">
+
+  <ContentView.BindingContext>
+    <local:CarouselViewModel/>
+  </ContentView.BindingContext>
+
+  <ContentView.Content>
+    <Grid x:DataType="local:CarouselViewModel">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <CarouselView x:Name="carouselView" Grid.Row="0" IndicatorView="{x:Reference indicatorView}"
+                    ItemsSource="{Binding Items}"
+                    Loop="False"
+                    IsBounceEnabled="True"
+                    HorizontalScrollBarVisibility="Never"
+                    HeightRequest="330">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate x:DataType="local:PaginationPage">
+                        <FlexLayout BindableLayout.ItemsSource="{Binding Children}" Style="{StaticResource mainPanel}">
+                            <BindableLayout.ItemTemplateSelector>
+                                <local:ViewSelector/>
+                            </BindableLayout.ItemTemplateSelector>
+                        </FlexLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <IndicatorView x:Name="indicatorView"
+                     VerticalOptions="EndAndExpand"
+                     HideSingle="True"
+                     IndicatorSize="15"
+                     IndicatorsShape="Circle"
+                     IndicatorColor="Gray"
+                     SelectedIndicatorColor="Black"
+                     Margin="0,0,0,10">
+            </IndicatorView>
+
+        </Grid>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarouselViewCrash", "CarouselViewCrash\CarouselViewCrash.csproj", "{6BADD2F6-80BB-4410-BF67-4CCB8082B26B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BADD2F6-80BB-4410-BF67-4CCB8082B26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BADD2F6-80BB-4410-BF67-4CCB8082B26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BADD2F6-80BB-4410-BF67-4CCB8082B26B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6BADD2F6-80BB-4410-BF67-4CCB8082B26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BADD2F6-80BB-4410-BF67-4CCB8082B26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BADD2F6-80BB-4410-BF67-4CCB8082B26B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBC99D99-CF26-4545-A20C-7E5C745752AF}
+	EndGlobalSection
+EndGlobal
